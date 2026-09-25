@@ -1,9 +1,9 @@
 #!/bin/bash
 
 LOG_FOLDER=/var/lib/roboshop
-sudo mkdir -p $LOG_FOLDER
-sudo chown -r ec2-user:ec2-user $LOG_FOLDER
-sudo chmod -r 755 $LOG_FOLDER
+sudo mkdir -P $LOG_FOLDER
+sudo chown -R ec2-user:ec2-user $LOG_FOLDER
+sudo chmod -R 755 $LOG_FOLDER
 LOG_FILE="$LOG_FOLDER/$0.log"
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
 
